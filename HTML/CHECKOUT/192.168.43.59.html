@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../Jquery.js"></script>
+    <script src="https://kit.fontawesome.com/14040df3bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../IMAGES/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <a href="#" class="logo">
+                <img src="../IMAGES/logo.png" width="125px">
+            </a>
+            <div class="cod-page">
+            <ul class="centre-menu">
+                <li><a href="../HOMEPAGE/homepage.html">Home</a></li>
+                <li><a href="../HOMEPAGE/homepage.html?usersearch">Products</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            </div>
+            <div class="right-menu">
+                <a href="cart">
+                    <i class="fas fa-shopping-cart">
+                        <span class="num-cart-product">2</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="form">
+        <div class="login-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Log In</strong>
+            <form method="POST" action="loginsignupform">
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="password" placeholder="Enter your password." name="password" required>
+                <input type="submit" value="Log In">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="forget">Forgot Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+
+        <div class="sign-up-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Sign Up</strong>
+            <form method="POST" action="loginsignupform">
+                <input type="text" placeholder="Enter your full name" name="fullname" required>
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="password" placeholder="Enter your password." name="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="existing-account">Already have an account?</a>
+            </div>
+        </div> 
+
+        <div class="forgot-password-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Reset Password</strong>
+            <form method="POST" action="forgotpasswordform">
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="submit" value="Continue">
+            </form>
+        </div> 
+
+
+    </div> 
+    <br><br>
+    <div class="delivery-details">
+        <h1>Delivery Details</h1>
+    </div>  
+    <br>
+<form method="POST" action="checkout">
+    <div class="name-detail-1">
+        <h3>Receiver's Name:</h2>
+    </div>
+    <div class="address-input">
+        <input type="text" value="vj" name="receivername" required>
+    </div>
+    <div class="address-detail-1">
+        <h3>Address Line 1:</h2>
+    </div>
+    <div class="address-input">
+        <input type="text" value="Brahmaputra Hostel%252C IITG" placeholder="Enter your address" name="addr1" required>
+    </div>
+    <div class="address-detail-2">
+        <h3>Address Line 2:</h3>
+    </div>
+    <div class="address-input">
+        <input type="text" value="IIT" placeholder="Enter your address" name="addr2" required>
+    </div>
+    <div class="address-detail-3">
+        <h3>Address Line 3:</h3>
+    </div>
+    <div class="address-input">
+        <input type="text" value="GUWAHATI" placeholder="Enter your address" name="addr3" required>
+    </div>
+    <br>
+    <div class="payment-mode">
+        <h3>Mode of payment:</h3>
+    </div>
+    <div class="payment-input">
+        <input type="radio" id="option1" name="payoption" value="C" checked>
+        <label for="COD">Cash on Delivery (COD)</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="option2" name="payoption" value="N">
+        <label for="NetBanking">Net Banking</label>
+    </div>
+
+    <div class="payment-btn">
+        <input type=submit value="Proceed">
+    </div>
+    </form>
+
+
+
+    <br><br>
+
+    <br>
+    <footer>
+        <span class="copyright">
+            Copyright 2021 - Birla High School
+        </span>   
+    </footer>
+</body>
+</html>
+

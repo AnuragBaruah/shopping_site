@@ -1,0 +1,217 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <!--<link rel="stylesheet" type="text/css" href="../PAYMENTS/stylescheckout.css">-->
+    <script src="https://kit.fontawesome.com/14040df3bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../IMAGES/logo.png" type="image/x-icon">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: poppins;
+}
+
+body{
+  background: url("../PAYMENTS/bg.png") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 10px;
+}
+
+.container{
+  max-width: 500px;
+  height: auto;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.title{
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-form{
+  margin-bottom: 20px;
+}
+
+.input-form .label{
+	  display: block;
+    font-size: 1em;
+    color: #212121;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.input-form .items{
+  margin-bottom: 20px;
+}
+.section-1 .items .input,
+.section-2 .items .input,
+.section-3 .items .input{
+    background: transparent;
+    border: 2px solid #BDBDBD;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #212121;
+    border-radius: 3px;
+}
+
+
+
+
+.input-form .section-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-form .section-3 .items{
+   width: 48%;
+}
+
+.btn{
+	background: #19be6c;
+	color: #fff;
+	font-size: 1.25em;	
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+  width: 100%;
+}
+
+.cvc{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cvc .tooltip{
+  color: #d4d4d4;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align:center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cvc .cvc-img{
+  position: absolute;
+  top: -300%;
+  right: 0;
+  background: #b3be0e;
+  padding: 4px;
+  border-radius: 5px;
+  display: none;
+}
+
+.cvc .cvc-img img{
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.tooltip:hover .cvc-img{
+  display: block;
+}
+
+@media screen and (max-width: 460px){
+  .input-form .section-3{
+    flex-direction: column;
+  }
+  .input-form .section-3 .items{
+     width: 100%;
+  }
+  .input-form .items{
+    margin-bottom: 10px;
+  }
+
+  .input-form{
+    margin-bottom: 15px;
+  }
+  .title{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+          <div class="title">Payment</div>
+          <form method="POST" action="onlinepay">
+          <div class="input-form">
+            <div class="section-1">
+              <div class="items">
+                <label class="label">card number</label>
+                <input type="text" class="input" data-mask="0000 0000 0000 0000" name="cardno" required>
+              </div>
+            </div>
+            <div class="section-2">
+              <div class="items">
+                <label class="label">Card Holder's Name</label>
+                <input type="text" class="input" name="name" required>
+              </div>
+            </div>
+            <div class="section-3">
+              <div class="items">
+                <label class="label">Expiration Date</label>
+                <input type="text" class="input" data-mask="00 / 00" placeholder="MM / YY" name="exp" required>
+              </div>
+              <div class="items">
+                <div class="cvc">
+                  <label class="label">CVV</label>
+                  <div class="tooltip">?
+                    <div class="cvc-img"><img src="../PAYMENTS/cvv.png" alt=""></div>
+                  </div>
+                </div>
+                <input type="password" class="input" data-mask="000" name="cvv" required>
+              </div>
+            </div>
+          </div>
+          
+          <input class="btn" type="submit" value="PAY" style="border:none;">
+            </form>
+        </div>
+      </div>
+
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    
+    
+</body>
+</html>
+
+    
+
+
+

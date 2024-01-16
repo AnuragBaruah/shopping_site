@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ShopDrop</title>
+    <script src="Jquery.js"></script>
+    <script src="https://kit.fontawesome.com/14040df3bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../odyssey/images/logo.png" type="image/x-icon">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: poppins;
+}
+
+body{
+  background: url("../IMAGES/bg.png") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 10px;
+}
+
+.container{
+  max-width: 500px;
+  height: auto;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px 40px 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.title{
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-form{
+  margin-bottom: 20px;
+}
+
+.input-form .label{
+	  display: block;
+    font-size: 1em;
+    color: #212121;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.input-form .items{
+  margin-bottom: 20px;
+}
+.section-1 .items .input,
+.section-2 .items .input,
+.section-3 .items .input{
+    background: transparent;
+    border: 2px solid #BDBDBD;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #212121;
+    border-radius: 3px;
+}
+
+
+
+
+.input-form .section-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-form .section-3 .items{
+   width: 48%;
+}
+
+.btn{
+	background: #19be6c;
+	color: #fff;
+	font-size: 1.25em;	
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+  width: 100%;
+}
+
+.cvc{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cvc .tooltip{
+  color: #d4d4d4;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align:center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cvc .cvc-img{
+  position: absolute;
+  top: -300%;
+  right: 0;
+  background: #b3be0e;
+  padding: 4px;
+  border-radius: 5px;
+  display: none;
+}
+
+.cvc .cvc-img img{
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.tooltip:hover .cvc-img{
+  display: block;
+}
+
+@media screen and (max-width: 460px){
+  .input-form .section-3{
+    flex-direction: column;
+  }
+  .input-form .section-3 .items{
+     width: 100%;
+  }
+  .input-form .items{
+    margin-bottom: 10px;
+  }
+
+  .input-form{
+    margin-bottom: 15px;
+  }
+  .title{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+}
+</style>
+<body>
+
+
+    <div class="wrapper">
+        <div class="container">
+          <div class="title">One Time Password Confirmation</div>
+          <form method="POST" action="otpsubmit">
+          <div class="input-form">
+            <div class="section-1">
+              <div class="items">
+                <label class="label" style="color: red;">The entered OTP is incorrect. Please try again</label>
+                <input type="password" class="input" maxlength="5" placeholder="Enter the OTP here" style="text-align: center;" name="O">
+              </div>
+            </div>
+        
+          </div>
+          
+          <input class="btn" type="submit" value="SUBMIT" style="border:none;">
+            </form>
+        </div>
+      </div>

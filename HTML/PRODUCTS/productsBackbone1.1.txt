@@ -1,0 +1,21 @@
+</h2>
+	<div class="">
+	    <form method="POST" action="sortandfilter">
+            	<select name="sortdata">
+               	    <option selected>Sort By: Featured</option>
+               	    <option>Sort By: Price: High To Low</option>
+               	    <option>Sort By: Price: Low To High</option>
+                </select><br><br>
+
+	    
+            <select class="filter-box-width" name="filtersdata">
+                <option selected>Filter: None</option>
+                <option>Filter: Under	₹ 500</option>
+                <option>Filter: Under	₹ 1000</option>
+                <option>Filter: Under	₹ 1500</option>
+                <option>Filter: Under	₹ 2000</option>
+            </select><br><br>
+	    <input type="submit" value="Apply Sort and Filter">
+	   </form>
+       </div>
+        </div>

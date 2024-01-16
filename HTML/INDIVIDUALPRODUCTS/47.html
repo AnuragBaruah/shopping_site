@@ -1,0 +1,250 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../Jquery.js"></script>
+    <script src="https://kit.fontawesome.com/14040df3bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../IMAGES/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <a href="#" class="logo">
+                <img src="../IMAGES/logo.png" width="125px">
+            </a>
+            <div class="cat-1">
+            <ul class="centre-menu">
+                <li><a href="../HOMEPAGE/homepage.html">Home</a></li>
+                <li><a href="../HOMEPAGE/homepage.html?usersearch=">Products</a></li>
+                <li><a href="../ABOUTUS/aboutus.html">About Us</a></li>
+            </ul>
+            </div>
+            <form method="GET">
+            <div class="search-box">
+                <input class="search-txt" type="text" name="usersearch">
+                <input class="search-btn" type="image" src="../IMAGES/search-solid1.png" alt="Submit">
+            </div>
+            </form>
+            <div class="right-menu">
+                <a href="#" class="user">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart">
+                    <!--<span class="num-cart-product">0</span>-->
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="form">
+        <div class="login-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Log In</strong>
+            <form method="POST" action="loginsignupform">
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="password" placeholder="Enter your password." name="password" required>
+                <input type="submit" value="Log In">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="forget">Forgot Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+
+        <div class="sign-up-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Sign Up</strong>
+            <form method="POST" action="loginsignupform">
+                <input type="text" placeholder="Enter your full name" name="fullname" required>
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="password" placeholder="Enter your password." name="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="existing-account">Already have an account?</a>
+            </div>
+        </div>
+	<div class="forgot-password-form">
+            <a href="" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Reset Password</strong>
+            <form method="POST" action="forgotpasswordform">
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="submit" value="Continue">
+            </form>
+        </div> 
+    </div> 
+    <br><br><br><br>
+
+<div class="test-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../IMAGES/img237.jpg" width="100%" id="ProductImg">
+                
+                <div class="showcase-row">
+                    <div class="showcase-col">
+                        <img src="../IMAGES/img237.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="showcase-col">
+                        <img src="../IMAGES/img238.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="showcase-col">
+                        <img src="../IMAGES/img239.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="showcase-col">
+                        <img src="../IMAGES/img240.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-2">
+                <!--<p>Products / Shirts</p>-->
+                <h1>Men Black & White Blazer Low '77 Vintage Leather Sneakers</h1>
+                <h4>Rs. 7195</h4>
+                <form action="addtocart47" method="POST">
+                <input type="number" value="1" min="1" class="quantity-changer" name="quantity">
+                <input type="submit" value="Add To Cart" class="btn" style="border:none;">
+                </form>
+                <h3>
+                    Product Description
+                </h3>
+                <p>Product Details:
+<br />
+A pair of round toe black and white sneakers ,has regular styling,
+<br />
+Lace-ups detail
+<br />
+Leather on the upper with soft suede and synthetic details for added durability and throwback styling.
+<br />
+The ultra-clean colours, simple lines and low-cut, padded collar creates a sleek look that feels great.
+<br />
+The vulcanised construction fuses the outsole to midsole for a streamlined look that's durable and comfortable.
+<br />
+The solid rubber outsole with herringbone pattern adds traction, durability and heritage styling.
+<br />
+Cushioned footbed
+<br />
+Textured and patterned outsole
+<br />
+Warranty: 6 months against manufacturing defects (not valid on products with more than 20% discount)
+<br />
+Warranty provided by brand/manufacturer
+<br />
+About The Shoe:
+<br />
+Praised by the streets for its classic simplicity and comfort, the Nike Blazer Low '77 Vintage returns with its low-profile style and heritage b-ball looks. Featuring luscious suede details, a retro Swoosh design and a super-soft collar, it's the must-have wardrobe staple that will take you everywhere.
+<br />
+Material & Care
+<br />
+Upper material: Leather
+<br />
+Use a branded leather conditioner to clean the product/wipe with a clean, dry cloth to remove the dust
+<br /></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="test-container">
+        <div class="row row-2">
+            <h2>Similar Products</h2>
+        </div>
+    </div>
+
+<div class="test-container"><div class="row">
+                        
+                            <div class="col-4">
+                                <a href="individualproducts57">
+                                    <img src="../IMAGES/img286.jpg">
+                                    <h4>Men Navy Blue Woven Design Adi-Shawt Running Shoes</h4>
+                                    <p style="color: black;">Rs. 3999</p>
+                                </a>
+                            </div>
+                        
+                        
+                        
+                            <div class="col-4">
+                                <a href="individualproducts55">
+                                    <img src="../IMAGES/img276.jpg">
+                                    <h4>Men Charcoal Grey & Blue Woven Design Uiflow Running Shoes</h4>
+                                    <p style="color: black;">Rs. 2210</p>
+                                </a>
+                            </div>
+                        
+                        
+                        
+                            <div class="col-4">
+                                <a href="individualproducts51">
+                                    <img src="../IMAGES/img256.jpg">
+                                    <h4>Men Grey & Black Renew Retaliation TR 3 Gym Shoes</h4>
+                                    <p style="color: black;">Rs. 5995</p>
+                                </a>
+                            </div>
+                        
+                        
+                        
+                            <div class="col-4">
+                                <a href="individualproducts50">
+                                    <img src="../IMAGES/img251.jpg">
+                                    <h4>Men Grey Solid Zoom Span 3 Running Shoes</h4>
+                                    <p style="color: black;">Rs. 7195</p>
+                                </a>
+                            </div>
+                        
+                        </div></div>    <!--JQuery-->
+    <script type="text/javascript">
+    
+    
+    $(document).on('click','.user,.existing-account',function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+    });
+
+    $(document).on('click','.form-cancel',function(){
+        $('.form').removeClass('login-active').removeClass('sign-up-active').removeclass('forgot-password-active')
+    });
+    $(document).on('click','.forget',function(){
+        $('.form').addClass('forgot-password-active').removeClass('login-active')
+    });
+
+    $(document).on('click','.sign-up-btn',function(){
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+    </script>
+    
+    <script>
+        var ProductImg=document.getElementById("ProductImg");
+        var SmallImg=document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src=SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src=SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src=SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src=SmallImg[3].src;
+        }
+
+    </script>
+
+
+
+</body>
+</html>

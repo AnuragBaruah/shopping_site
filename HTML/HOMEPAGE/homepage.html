@@ -1,0 +1,395 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ShopDrop</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../lightslider.css"/>
+    <script src="../Jquery.js"></script>
+    <script src="../lightslider.js"></script>
+    <script src="https://kit.fontawesome.com/14040df3bb.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../IMAGES/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <a href="../HOMEPAGE/homepage.html" class="logo">
+                <img src="../IMAGES/logo.png" width="125px">
+            </a>
+            <div class="cat-1">
+            <ul class="centre-menu">
+                <li><a href="../HOMEPAGE/homepage.html">Home</a></li>
+                <li><a href="?usersearch=">Products</a></li>
+                <li><a href="../ABOUTUS/aboutus.html">About Us</a></li>
+            </ul>
+            </div>
+            <form method="GET">
+            <div class="search-box">
+                <input class="search-txt" type="text" name="usersearch">
+                <input class="search-btn" type="image" src="../IMAGES/search-solid1.png" alt="Submit">
+            </div>
+            </form>
+            <div class="right-menu">
+                <a href="#" class="user">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="cart">
+                    <i class="fas fa-shopping-cart">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="form">
+        <div class="login-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Log In</strong>
+            <form method="POST" action="loginsignupform">
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="password" placeholder="Enter your password." name="password" required>
+                <input type="submit" value="Log In">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="forget">Forgot Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+
+        <div class="sign-up-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Sign Up</strong>
+            <form method="POST" action="loginsignupform">
+                <input type="text" placeholder="Enter your full name" name="fullname" required>
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="password" placeholder="Enter your password." name="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="existing-account">Already have an account?</a>
+            </div>
+        </div> 
+
+        <div class="forgot-password-form">
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Reset Password</strong>
+            <form method="POST" action="forgotpasswordform">
+                <input type="email" placeholder="Enter your email address." name="email" required>
+                <input type="submit" value="Continue">
+            </form>
+        </div> 
+
+    </div> 
+    <br><br><br><br>
+<ul id="adaptive">
+    <li class="item-a">
+        <div class="slider-box slide-1">
+            <div class="text-container">
+
+            <div class="slider-text">
+                <a href="individualproducts22" class="slider-btn-1">Shop</a>
+            </div>
+
+            </div> 
+        </div>
+    </li>
+        
+    <li class="item-b">
+        <div class="slider-box slide-2">
+            <div class="text-container">
+
+            <div class="slider-text">
+                <a href="individualproducts17" class="slider-btn-2">Order Now</a>
+            </div>
+
+            </div> 
+        </div>
+    </li>
+
+    <li class="item-c">
+        <div class="slider-box slide-3">
+            <div class="text-container">
+
+            <div class="slider-text">
+                <a href="?usersearch=nike" class="slider-btn-3">Shop Now</a>
+            </div>
+
+            </div> 
+        </div>
+    </li>
+
+</ul>
+
+    <div class="heading">
+        <h2>Categories</h2>
+    </div>
+    <br>
+    <div class="categories-slider-final">
+    <ul id="autoWidth" class="cS-hidden">
+        <li class="item-1">
+            <div class="categories">
+                <a href="?usersearch=shirts">
+                <img src="../IMAGES/feature_2.jpg"/>
+                </a>
+            </div>
+            <span>Shirts</span>
+        </li>
+
+        <li class="item-2">
+            <div class="categories">
+                <a href="?usersearch=electronics">
+                <img src="../IMAGES/feature_7.jpg"/>
+                </a>
+            </div>
+            <span>Electronics</span>
+        </li>
+
+        <li class="item-3">
+            <div class="categories">
+                <a href="?usersearch=books">
+                <img src="../IMAGES/feature_8.jpg"/>
+                </a>
+            </div>
+            <span>Books</span>
+        </li>
+        <li class="item-3">
+            <div class="categories">
+                <a href="?usersearch=shoes">
+                <img src="../IMAGES/feature-4.jpg"/>
+                </a>
+            </div>
+            <span>Shoes</span>
+        </li>
+        </div>
+    </ul>
+    <br><br><br>
+    
+    <div class="test-container">
+        <h2 class='title-01'>Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+		<a href="individualproducts17">
+                <img src="../IMAGES/img86.jpg">
+                <h4>iPhone 12 Pro Max 512 GB (Graphite)</h4>
+                <p style="color: black;">Rs. 156000</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts3">
+                <img src="../IMAGES/img16.jpg">
+                <h4>Sea Green Solid Mandarin Collar T-Shirt</h4>
+                <p style="color: black;">Rs. 599</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts28">
+                <img src="../IMAGES/img141.jpg">
+                <h4>Apple AirPods Pro</h4>
+                <p style="color: black;">Rs. 20990</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts52">
+                <img src="../IMAGES/img261.jpg">
+                <h4>Men Black Solid Air Zoom Structure 24 Running Shoes</h4>
+                <p style="color: black;">Rs. 10295</p>
+            </a></div>
+        </div>
+        <h2 class='title-01'>New Arrivals</h2>
+        <div class="row">
+            <div class="col-4"><a href="individualproducts1">
+                <img src="../IMAGES/img6.jpg">
+                <h4>Grey Striped Polo Collar T-Shirt</h4>
+                <p style="color: black;">Rs. 494</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts59">
+                <img src="../IMAGES/img296.jpg">
+                <h4>Men Black Sneakers</h4>
+                <p style="color: black;">Rs. 3374</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts37">
+                <img src="../IMAGES/img186.jpg">
+                <h4>Ghosts of The Silent Hills</h4>
+                <p style="color: black;">Rs. 180</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts56">
+                <img src="../IMAGES/img281.jpg">
+                <h4>Men Navy Blue Woven Design Clear Factor Running</h4>
+                <p style="color: black;">Rs. 1749</p>
+            </a></div>
+        </div>
+        <div class="row">
+            <div class="col-4"><a href="individualproducts21">
+                <img src="../IMAGES/img106.jpg">
+                <h4>HyperX Cloud Core</h4>
+                <p style="color: black;">Rs. 6500</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts20">
+                <img src="../IMAGES/img101.jpg">
+                <h4>Razer BlackShark V2 X (Black)</h4>
+                <p style="color: black;">Rs. 7300</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts24">
+                <img src="../IMAGES/img121.jpg">
+                <h4>HP USB 3.1 Flash Drive 256GB</h4>
+                <p style="color: black;">Rs. 4990</p>
+            </a></div>
+            <div class="col-4"><a href="individualproducts26">
+                <img src="../IMAGES/img131.jpg">
+                <h4>ASUS ROG Strix G17 144Hz 1TB SSD Gaming Laptop</h4>
+                <p style="color: black;">Rs. 97900</p>
+            </a></div>
+        </div>
+
+    </div>
+
+    <div class="offer">
+        <div class="test-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../IMAGES/offer1.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Available Exclusively on ShopDrop</p>
+                    <h1>Apple Watch<br> Series 6</h1>
+                    <small>
+                        Measure your blood oxygen level. Keep an eye on your heart. See your fitness metrics on the enhanced Always-On Retina display. Live a healthier, more active, more connected life.
+                    </small>
+                    <br>
+                    <a href="individualproducts22" class="new-btn">pre-order now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brands">
+        <div class="test-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="../IMAGES/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="../IMAGES/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="../IMAGES/logo-asus-rog.jpg">
+                </div>
+                <div class="col-5">
+                    <img src="../IMAGES/logo-apple.png">
+                </div>
+                <div class="col-5">
+                    <img src="../IMAGES/logo-philips.png">
+                </div>
+            </div>
+        </div> 
+
+    </div>
+
+    <section class="services">
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Shipping</span>
+            <p>Free shipping for all orders in India</p> 
+        </div>
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Support 24/7</span>
+            <p>Our customer support is available 24/7</p> 
+        </div>
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>Within 30 days of the completion of delivery</p> 
+        </div>
+    </section>
+    <br>
+    <div class="newsletter">
+        <form method="POST">
+            <input type="email" placeholder="Enter your email address." name="email" required/>
+            <input type="submit" value="Subscribe">
+         </form>
+    </div>
+
+    <div class="app-logo">
+        <img src="../IMAGES/app-store.png">
+        <img src="../IMAGES/play-store.png">
+    </div>
+    
+    <footer>
+        <br><br>
+        <span class="copyright">
+            Copyright 2021 - Birla High School
+        </span>   
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--JQuery-->
+    <script type="text/javascript">
+    
+    
+    $(document).on('click','.user,.existing-account',function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+    });
+
+    $(document).on('click','.form-cancel',function(){
+        $('.form').removeClass('login-active').removeClass('sign-up-active').removeClass('forgot-password-active')
+    });
+
+    $(document).on('click','.sign-up-btn',function(){
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+
+    $(document).on('click','.forget',function(){
+        $('.form').addClass('forgot-password-active').removeClass('login-active')
+    });
+
+
+
+
+
+    /*slider-box*/
+    $(document).ready(function() {
+        $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        auto:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+        });
+    });
+
+    /*category-slider*/
+    $(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:false,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+
+    </script>
+    
+</body>
+</html>
+
+    
+
+
+
